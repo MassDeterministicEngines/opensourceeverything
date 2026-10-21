@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy · opensourceeverything</title>
+<meta name="description" content="How the opensourceeverything projects, including the AI streamer desktop app, handle your data and your Google user data.">
+<style>
+  :root { --bg: #0b1220; --card: #111a2e; --line: #1e2a44; --text: #e6ebf5; --muted: #93a0ba; --accent: #4c8dff; }
+  @media (prefers-color-scheme: light) { :root { --bg: #f6f8fc; --card: #ffffff; --line: #dde3ee; --text: #121a2b; --muted: #55627a; --accent: #1f5fd6; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.65 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 780px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 2rem; margin: 0 0 4px; letter-spacing: -0.02em; }
+  h2 { font-size: 1.25rem; margin: 32px 0 8px; }
+  h3 { font-size: 1.05rem; margin: 20px 0 6px; }
+  p, ul { margin: 0 0 12px; }
+  ul { padding-left: 20px; }
+  .muted { color: var(--muted); }
+  a { color: var(--accent); }
+  footer { color: var(--muted); font-size: 0.9rem; margin-top: 40px; border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+<main>
+  <p><a href="./">← opensourceeverything</a></p>
+  <h1>Privacy policy</h1>
+  <p class="muted">Last updated: October 21, 2026</p>
+
+  <p>This policy covers the opensourceeverything projects published by MassDeterministicEngines, including this website, the DST security testing tool and the AI streamer desktop app (also called Agentic Streamer). The short version: the software runs on your own computer, your data stays there, and we do not collect, sell or share it.</p>
+
+  <h2>This website</h2>
+  <p>This site has no accounts, cookies, analytics or advertising. It is hosted by GitHub Pages, and GitHub may keep standard server logs as described in the <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
+
+  <h2>DST</h2>
+  <p>DST runs on your machine and analyses the code you point it at. It does not upload your code or results anywhere. Anything you choose to contribute to the public repositories, such as code or experiments, becomes public on GitHub.</p>
+
+  <h2>AI streamer (Agentic Streamer)</h2>
+  <p>AI streamer is a desktop app that runs on your computer alongside OBS Studio. It has no server of its own, and the people who make it never receive your data.</p>
+
+  <h3>Google user data it accesses</h3>
+  <p>Only if you choose to connect YouTube, the app asks Google for permission to use the YouTube Data API on your behalf (the <code>youtube.force-ssl</code> scope). With that permission it accesses:</p>
+  <ul>
+    <li>your channel's ID and name, to show which account is connected;</li>
+    <li>your live broadcasts, to find the one you are currently streaming;</li>
+    <li>the live chat of that broadcast: reading messages, and posting messages that you send, or that an AI agent you have set up sends when you have allowed it to.</li>
+  </ul>
+  <p>If you add a second account as a chat bot, the same applies to that account, which is used only to post chat messages.</p>
+
+  <h3>How it uses that data</h3>
+  <ul>
+    <li>To show your live chat to you in the app, and to post messages to it.</li>
+    <li>If you switch on the chat agent or ask your AI agent about chat, the chat messages it needs are sent to the AI provider you have chosen in the app's settings (for example Anthropic, OpenAI, Google or NVIDIA), under that provider's own terms. Nothing is sent to an AI provider unless you have set one up and switched that feature on.</li>
+  </ul>
+  <p>The app does not use Google user data for advertising, does not sell it, and does not transfer it to anyone else. It is not used to train AI models by us.</p>
+  <p>AI streamer's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h3>Where it is stored and for how long</h3>
+  <ul>
+    <li>Your Google sign-in tokens are stored encrypted on your computer, in the app's own folder.</li>
+    <li>Chat messages and the app's activity log are kept on your computer so you can review what happened.</li>
+    <li>The app keeps a count of YouTube API usage per day, on your computer.</li>
+  </ul>
+
+  <h3>Removing access and deleting data</h3>
+  <ul>
+    <li>Sign out of YouTube in the app's settings: this deletes the stored tokens and revokes the app's access at Google.</li>
+    <li>You can also remove access at any time from your Google Account at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li>To delete everything the app keeps, uninstall it and delete its folder (<code>.agentic-streamer</code> in your user folder).</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>These projects are not directed at children under 13.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the new version will be posted on this page with a new date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: open an issue at <a href="https://github.com/MassDeterministicEngines/opensourceeverything/issues">github.com/MassDeterministicEngines/opensourceeverything</a>.</p>
+
+  <footer><p><a href="./">opensourceeverything</a></p></footer>
+</main>
+</body>
+</html>

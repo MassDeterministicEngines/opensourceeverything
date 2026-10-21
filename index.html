@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>opensourceeverything</title>
+<meta name="description" content="Open-source projects built by people and AI agents together: DST deterministic security testing, and AI streamer, a desktop companion for live streamers.">
+<style>
+  :root { --bg: #0b1220; --card: #111a2e; --line: #1e2a44; --text: #e6ebf5; --muted: #93a0ba; --accent: #4c8dff; }
+  @media (prefers-color-scheme: light) { :root { --bg: #f6f8fc; --card: #ffffff; --line: #dde3ee; --text: #121a2b; --muted: #55627a; --accent: #1f5fd6; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 2.2rem; margin: 0 0 8px; letter-spacing: -0.02em; }
+  h2 { font-size: 1.3rem; margin: 0 0 8px; }
+  p { margin: 0 0 12px; }
+  .lead { color: var(--muted); font-size: 1.1rem; margin-bottom: 32px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px 22px; margin-bottom: 16px; }
+  .tag { display: inline-block; font-size: 0.8rem; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 2px 10px; margin-bottom: 10px; }
+  ul { margin: 0 0 12px; padding-left: 20px; }
+  a { color: var(--accent); }
+  footer { color: var(--muted); font-size: 0.9rem; margin-top: 40px; border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>opensourceeverything</h1>
+  <p class="lead">Open-source projects built by people and AI agents working together. Agents contribute experiments to shared repositories, and the results stay open for anyone to read, run and check.</p>
+
+  <section class="card">
+    <span class="tag">Security</span>
+    <h2>DST: Deterministic Security Testing</h2>
+    <p>Static analysis that does more than flag possible vulnerabilities: for each finding it produces a proof certificate with the payload, how to deliver it, and how to check that it worked. There is no machine learning in the detection loop, so the same code gives the same report every time.</p>
+    <ul>
+      <li>Parses source code with tree-sitter into a graph of data flows.</li>
+      <li>Checks hundreds of CWE properties against that graph, across Java, JavaScript, TypeScript, Python, Go, Rust, PHP, C#, Ruby, Kotlin and Swift.</li>
+      <li>Runs on your own machine from the command line.</li>
+    </ul>
+    <p><a href="https://github.com/MassDeterministicEngines/opensourceeverything">Source and documentation on GitHub</a></p>
+  </section>
+
+  <section class="card">
+    <span class="tag">Streaming</span>
+    <h2>AI streamer (Agentic Streamer)</h2>
+    <p>A desktop companion for live streamers. It runs on the streamer's own computer next to OBS Studio, and lets an AI agent the streamer chooses help build and run the stream: making scenes and overlays, staging them for the streamer to check before they go on air, and keeping up with chat.</p>
+    <ul>
+      <li>Connects to OBS Studio on the same computer.</li>
+      <li>With the streamer's permission, connects to their YouTube channel to read their live chat and post messages to it.</li>
+      <li>Keeps its settings, sign-ins and logs on the streamer's computer.</li>
+    </ul>
+    <p>How it handles your data, including YouTube data: <a href="privacy.html">privacy policy</a>.</p>
+  </section>
+
+  <section class="card">
+    <span class="tag">How it works</span>
+    <h2>Contributing</h2>
+    <p>Work happens in the open on GitHub. People and their agents propose experiments and changes to the shared repositories, and everything merged stays public.</p>
+    <p><a href="https://github.com/MassDeterministicEngines">MassDeterministicEngines on GitHub</a></p>
+  </section>
+
+  <footer>
+    <p><a href="privacy.html">Privacy policy</a> · Contact: open an issue on <a href="https://github.com/MassDeterministicEngines/opensourceeverything/issues">GitHub</a></p>
+  </footer>
+</main>
+</body>
+</html>
